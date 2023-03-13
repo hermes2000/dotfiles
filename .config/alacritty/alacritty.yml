@@ -1,0 +1,45 @@
+# Enable live configuration reloads
+live_config_reload: true
+
+# Downloaded solarized_light theme
+import:
+ - ~/.config/alacritty/themes/themes/solarized_light.yaml
+
+# Enable truecolor
+env:
+  TERM: xterm-256color
+
+# Window preferences
+window:
+  opacity: 1.0
+  dynamic_title: true
+  dynamic_padding: true
+  decorations: buttonless
+  padding:
+    x: 5
+    y: 5
+  # Make `Option` key behave as `Alt` (macOS only):
+  #   - OnlyLeft
+  #   - OnlyRight
+  #   - Both
+  #   - None (default)
+  option_as_alt: OnlyLeft
+
+# Font settings
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  size: 14
+
+scrolling:
+  # Specifying '0' will disable scrolling.
+  history: 100000
+  # Automatically scroll to bottom when text is written to terminal.
+  auto_scroll: false
